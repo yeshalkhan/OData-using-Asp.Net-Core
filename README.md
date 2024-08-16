@@ -23,17 +23,16 @@ Some common queries:
   - *Example:* `/odata/companies`
 - **$filter: Filters results based on specific criteria.**
   - *Example:* `/odata/companies?$filter=Size%20gt%2020&$count=true` (Retrieve companies with size greater than 20)
+  - *Example:* `/odata/companies?$filter=Id%20eq%201%20or%20Id%20eq%203` (Retrieve companies with Id equal to 1 or 3)
 - **$expand: Expands related entities.**
   - Example: `/odata/Companies?$expand=Products`` (Retrieve company data with product information)
-- **Retrieve by ID: Retrieves a specific entity by its ID.**
+- **Retrieve by ID:**
   - *Example:* `/odata/companies(1)` (Retrieve company by ID)
-- **$filter with multiple conditions: Filters results based on multiple criteria.**
-  - *Example:* `/odata/companies?$filter=Id%20eq%201%20or%20Id%20eq%203` (Retrieve companies with Id equal to 1 or 3)
-- **$orderby: Sorts the results by one or more properties.**
+- **$orderby:.**
   - *Example:* `/odata/companies?$orderby=Id%20desc` (Retrieve companies ordered by Id in descending order)
-- **Retrieve by ID with expansion.**
+- **Retrieve by ID with expansion:**
   - *Example:* `/odata/companies(2)?$expand=Products` (Retrieve companies with Id equal to 2 and expand their list of products)
 - **$select: Limits the properties returned in the response.**
   - *Example:* `/odata/companies?$select=Name` (Retrieve company names only)
-- **Combining multiple query options.**
+- **Combining multiple query options:**
   - *Example:* `/odata/companies?$orderby=Id%20desc&$expand=Products&$top=2&$select=Name` (Retrieve names of top 2 companies ordered by Id in descending order and expand their list of products) 
