@@ -1,0 +1,6 @@
+@OData_Code_Example_HostAddress = http://localhost:5269
+
+GET {{OData_Code_Example_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
